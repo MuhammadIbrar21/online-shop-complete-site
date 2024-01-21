@@ -1,0 +1,702 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: customFont1;
+  src: url(assets/fonts/cocogoose-pro/Cocogoose\ Pro\ Regular\ Trial.ttf);
+}
+@font-face {
+  font-family: customFont2;
+  src: url(assets/fonts/cocogoose-pro/Cocogoose\ Pro\ Thin\ Trial.ttf);
+}
+@font-face {
+  font-family: customFont3;
+  src: url(assets/fonts/cocogoose-pro/Cocogoose\ Pro\ Light\ Trial.ttf);
+}
+@font-face {
+  font-family: customFont4;
+  src: url(assets/fonts/cocogoose-pro/Cocogoose\ Pro\ Ultralight\ Italic\ Trial.ttf);
+}
+body {
+  background-color: palevioletred;
+}
+
+/* Every page heading start */
+
+.section-heading {
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-family: customFont2;
+  text-transform: uppercase;
+  width: 160px;
+  margin: auto;
+  border-bottom: 2px solid white;
+}
+.section-heading-2 {
+  color: #0373fd;
+  text-align: center;
+  padding: 5px;
+  font-family: customFont2;
+  text-transform: uppercase;
+  width: 240px;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom: 2px solid #0373fd;
+}
+.section-heading-3 {
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-family: customFont2;
+  text-transform: uppercase;
+  width: 145px;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom: 2px solid white;
+}
+
+/* Every page heading end */
+
+/* Header + Navbar start */
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#logo {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  object-fit: cover;
+}
+nav {
+  width: 70%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  float: right;
+  list-style: none;
+}
+nav ul li {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+nav ul li:nth-child(5) {
+  font-weight: bold;
+  background-color: palevioletred;
+}
+nav ul li:nth-child(5):hover {
+  font-weight: bold;
+  background-color: white;
+  color: #0373fd;
+  border: 1px solid palevioletred;
+}
+nav ul li:hover {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.background {
+  background-color: #0373fd;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  width: 100%;
+  height: 100%;
+}
+
+/* Header + Navbar end */
+
+/* overview section start */
+
+.overview-section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: 43%;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 5px gray;
+  transition: width 500ms linear 0s, box-shadow 500ms linear 0s,
+    height 500ms linear 0s;
+}
+.img-1 {
+  background-image: url(assets/images/bg/racing.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-2 {
+  background-image: url(assets/images/bg/off-road.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-3 {
+  background-image: url(assets/images/bg/parking.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.box:hover {
+  width: 340px;
+  height: 340px;
+  color: white;
+  box-shadow: 0 0 15px gray;
+}
+.box h1 {
+  display: none;
+}
+.box:hover h1 {
+  display: block;
+  color: white;
+  font-family: customFont1;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #0373fd;
+}
+
+/* overview section end */
+
+/* main-content start */
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.main-content h2 {
+  text-transform: uppercase;
+  font-weight: 1em;
+  font-family: customFont2;
+}
+.main-content h1 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-family: customFont1;
+  font-size: 4em;
+  font-weight: bolder;
+}
+.main-content p {
+  width: 750px;
+  font-weight: lighter;
+  font-family: customFont2;
+  font-size: 0.8em;
+  margin-top: 10px;
+  line-height: 25px;
+}
+.text-btn {
+  display: inline-block;
+  width: 450px;
+  height: 50px;
+  margin-top: 5%;
+}
+.text-btn input {
+  width: 300px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  outline: none;
+}
+.text-btn .btn {
+  width: 100px;
+  padding: 11px;
+  float: right;
+  background-color: palevioletred;
+  text-align: center;
+  border-radius: 25px;
+  text-transform: uppercase;
+  position: relative;
+  right: 65px;
+}
+.text-btn .btn:hover {
+  font-weight: bold;
+  color: #0373fd;
+  background-color: white;
+}
+
+/* main-content end */
+
+/* Details-section start */
+
+.details-section {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  margin-top: 90%;
+}
+.product-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 90%;
+  padding-top: 50px;
+  margin: auto;
+  gap: 10px;
+}
+.product {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: box-shadow 200ms ease-in 0s;
+}
+.product-img {
+  width: 100%;
+  height: 65%;
+  border-radius: 20px;
+  margin: auto;
+}
+.p-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.product-details {
+  width: 100%;
+  height: 35%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  /* line-height: 30px; */
+}
+.product-info {
+  width: 50%;
+  height: 50%;
+  margin: 4px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.product-category {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 10px;
+}
+.price {
+  width: 30%;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  background-color: palevioletred;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+.product-name {
+  transition: color 200ms ease-in 0s;
+}
+.product:hover {
+  box-shadow: 0 0 10px gray;
+}
+.product:hover .price {
+  background-color: #0373fd;
+}
+.product:hover .product-name {
+  color: #0373fd;
+}
+
+/* Details-section end */
+
+/* Customer Review Start */
+
+.feedback {
+  width: 100%;
+  height: 100%;
+  background-color: palevioletred;
+  position: absolute;
+  margin-top: 134%;
+}
+.feedback-h1 {
+  color: white;
+  font-family: customFont3;
+  font-size: xx-large;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 30px;
+}
+#reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  gap: 40px;
+}
+.review {
+  width: 45%;
+  height: 80%;
+  border-radius: 20px;
+  background-color: white;
+  transition: width 500ms linear 0s, height 500ms linear 0s;
+}
+.review-inner-top {
+  width: 75%;
+  height: 50%;
+  padding-top: 30px;
+  margin: auto;
+}
+.review-inner-top p {
+  font-family: customFont4;
+  color: black;
+  font-size: 0.7em;
+}
+#quote {
+  width: 30px;
+  margin: 10px 0;
+}
+.review-inner-bottom {
+  width: 75%;
+  height: 40%;
+  margin: auto;
+}
+.user-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+.user-details {
+  float: right;
+  font-family: customFont4;
+  line-height: 30px;
+  margin-right: 45%;
+}
+.first-user {
+  float: right;
+  font-family: customFont4;
+  line-height: 30px;
+  margin-right: 51%;
+}
+#user-name {
+  font-size: 0.7em;
+  font-weight: bolder;
+}
+#user-professional {
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+.feedback-btn {
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-family: customFont3;
+  margin: auto;
+  background-color: #0373fd;
+  cursor: pointer;
+}
+.review:hover {
+  background-color: #0373fd;
+  width: 47%;
+  height: 82%;
+  box-shadow: 0 0 15px gray;
+  color: white;
+}
+.review:hover p {
+  color: white;
+}
+.feedback-btn:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  font-weight: bold;
+}
+
+/* Customer Review End */
+
+/* Contact Us Page Start */
+
+#contact-us {
+  width: 100%;
+  height: 100%;
+  background-color: #0373fd;
+  margin-top: 178.8%;
+  position: absolute;
+}
+.contact-heading {
+  font-weight: normal;
+  font-family: customFont3;
+  margin-bottom: 10px;
+}
+.messege-container {
+  width: 75%;
+  height: 80%;
+  background-color: white;
+  margin: auto;
+  margin-top: 3%;
+  margin-right: 6%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  color: #0373fd;
+  font-family: customFont2;
+}
+.send-messege {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  margin-top: 5%;
+  position: absolute;
+  margin-left: 24%;
+}
+.first-name {
+  width: 45%;
+  height: 40%;
+  margin-right: 4%;
+  display: inline-block;
+  margin-top: 1.5%;
+}
+.last-name {
+  width: 45%;
+  height: 40%;
+  display: inline-block;
+  margin-top: 1.5%;
+}
+.user-message {
+  width: 95%;
+  height: 30%;
+  margin-top: 2%;
+}
+.first-name-span {
+  width: 100px;
+  font-family: customFont3;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 0.6em;
+}
+.first-name input {
+  position: absolute;
+  margin-top: 3%;
+  width: 45%;
+  outline: none;
+  border: none;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  color: #0373fd;
+  border-bottom: 1.5px solid #0373fd;
+}
+.email-name-span {
+  width: 100px;
+  position: absolute;
+  font-family: customFont3;
+  font-weight: bolder;
+  margin-top: 14%;
+  font-size: 0.6em;
+}
+.first-name input[type="email"] {
+  position: absolute;
+  margin-top: 16.8%;
+  width: 45%;
+  outline: none;
+  border: none;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  color: #0373fd;
+  border-bottom: 1.5px solid #0373fd;
+}
+.last-name input {
+  position: absolute;
+  margin-top: 3%;
+  width: 45%;
+  outline: none;
+  border: none;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  color: #0373fd;
+  border-bottom: 1.5px solid #0373fd;
+}
+.last-name input[type="email"] {
+  position: absolute;
+  margin-top: 16.8%;
+  width: 45%;
+  outline: none;
+  border: none;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  color: #0373fd;
+  border-bottom: 1.5px solid #0373fd;
+}
+.message-span {
+  font-weight: normal;
+  font-family: customFont3;
+  margin-top: 5%;
+}
+.actual-message {
+  margin-top: 2%;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  color: #0373fd;
+  border-bottom: 1.5px solid #0373fd;
+}
+.send-btn {
+  padding: 10px 20px;
+  width: 90px;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #0373fd;
+}
+.send-btn:hover {
+  font-family: customFont3;
+  background-color: transparent;
+  color: #0373fd;
+  border: 1px solid #0373fd;
+}
+.contact-info {
+  width: 25%;
+  height: 70%;
+  background-color: palevioletred;
+  position: absolute;
+  margin-top: -33%;
+  margin-left: 6.5%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.contact-link {
+  width: 85%;
+  height: 90%;
+  margin: auto;
+  margin-top: 6%;
+  color: white;
+  font-family: customFont3;
+}
+.contact-link h1 {
+  margin-left: 5%;
+  margin-top: 15%;
+}
+.contact-place {
+  width: 95%;
+  height: 20%;
+  margin-left: 5%;
+  margin-top: 7%;
+}
+.contact-place p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 60%;
+  float: right;
+  margin-right: 18%;
+}
+.map-contact p {
+  margin-right: 21%;
+}
+.mail-contact {
+  width: 80%;
+  height: 10%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.mail-contact p {
+  margin-top: 2%;
+}
+.phone-contact {
+  width: 80%;
+  height: 10%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.phone-contact p {
+  margin-top: 2%;
+}
+.icon {
+  width: 30px;
+}
+.icons {
+  width: 80%;
+  margin-left: 5%;
+  margin-top: 25%;
+}
+.icons .icon2 {
+  width: 30px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+/* Contact Us Page End */
+
+/* Footer Start */
+
+Footer {
+  width: 100%;
+  height: 20%;
+  background-color: palevioletred;
+  position: absolute;
+  margin-top: 218%;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+  text-align: center;
+  color: white;
+}
+footer h4 {
+  margin-top: 5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+footer a{
+  text-decoration: none;
+  color: blueviolet;
+}
+footer a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+/* Footer End */
